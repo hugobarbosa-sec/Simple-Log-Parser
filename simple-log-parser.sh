@@ -7,14 +7,14 @@ else
 fi
 
 if [ ! -f "$log_file" ]; then
-    echo "Erro: arquivo nao encontrado: $log_file"
+    echo "Arquivo $log_file nao encontrado"
     exit 1
 fi
 
 while true; do
     echo ""
     echo "===== ANALISADOR SIMPLES DE LOG ====="
-    echo "Arquivo analisado: $log_file"
+    echo "Analisando arquivo $log_file"
     echo ""
     echo "1  - Detectar possiveis ataques de XSS"
     echo "2  - Detectar tentativas de SQL Injection"
